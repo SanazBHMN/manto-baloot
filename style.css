@@ -26,9 +26,10 @@ body {
   position: relative;
   width: 100%;
   height: 80vh;
-  background: url(./assets/images/cappuccino-wallpapers.jpg);
+  /* background: url(./assets/images/cappuccino-wallpapers.jpg); */
   background-size: cover;
   background-attachment: fixed;
+  background-color: #011c63;
   /* clip-path: polygon(0 0, 100% 0, 100% 40%, 50% 80%, 0 40%); */
   clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
 }
@@ -60,7 +61,7 @@ i.warning-icon {
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-/* 
+
 @keyframes warning {
   from {
     color: black;
@@ -68,66 +69,51 @@ i.warning-icon {
   to {
     color: #e5383b;
   }
-} */
+}
 
-.info {
-  width: 60%;
-  margin: 5rem auto;
-  /* border: 3px solid red; */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 65%;
+  margin: 1rem auto;
+}
+
+.location,
+.social-media,
+.instagram-qr-code {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-content {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  border-top: 2px solid #fffffc;
-  padding: 2rem;
 }
 
-.card-heading {
-  margin-bottom: 1rem;
-}
-
-.card {
-  display: flex;
+.feature-content.media {
   justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid #fffffc;
 }
 
-.address {
-  padding: 0 2rem;
-  width: 100%;
-  text-align: center;
-  /* border-right: 3px solid #fffffc; */
-}
-
-.telephone,
-.location,
-.instagram {
-  width: 100%;
+p {
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.address-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.addr-1,
+.addr-2 {
+  border-bottom: 1px solid #fffffc;
 }
 
-.address-icon img {
-  width: 100%;
-  height: auto;
-}
-
-i.contact {
-  font-size: 1.5em;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 3px;
+.social-media {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-media i {
+  font-size: 2em;
 }

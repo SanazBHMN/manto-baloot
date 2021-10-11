@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Vazir;
+  src: url("./assets/font/vazir-font-v30.1.0/Vazir-Medium.eot");
+  src: url("Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/vazir-font-v30.1.0/Vazir-Medium.woff2") format("woff2"),
+    url("./assets/font/vazir-font-v30.1.0/Vazir-Regular.woff") format("woff"),
+    url("./assets/font/vazir-font-v30.1.0/Vazir-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* min-height: 180vh; */
+  background-color: #e9ecef;
+  font-family: Vazir, sans-serif;
+  margin-bottom: 7rem;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url(./assets/images/cappuccino-wallpapers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  /* clip-path: polygon(0 0, 100% 0, 100% 40%, 50% 80%, 0 40%); */
+  clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9;
+}
+
+main .warning {
+  width: 60%;
+  margin: 5rem auto;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #fffffc;
+  border-bottom: 2px solid #fffffc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.warning-icon {
+  font-size: 2rem;
+  margin-left: 8px;
+  animation-name: warning;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+/* 
+@keyframes warning {
+  from {
+    color: black;
+  }
+  to {
+    color: #e5383b;
+  }
+} */
+
+.info {
+  width: 60%;
+  margin: 5rem auto;
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #fffffc;
+  padding: 2rem;
+}
+
+.card-heading {
+  margin-bottom: 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #fffffc;
+}
+
+.address {
+  padding: 0 2rem;
+  width: 100%;
+  text-align: center;
+  /* border-right: 3px solid #fffffc; */
+}
+
+.telephone,
+.location,
+.instagram {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-icon img {
+  width: 100%;
+  height: auto;
+}
+
+i.contact {
+  font-size: 1.5em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

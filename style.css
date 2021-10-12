@@ -76,6 +76,7 @@ i.announcement-icon {
   grid-template-columns: repeat(2, 1fr);
   width: 65%;
   margin: 1rem auto;
+  /* background-color: #e5383b; */
 }
 
 .location,
@@ -88,11 +89,28 @@ i.announcement-icon {
 }
 
 .feature-content {
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.addresses {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.addresses p {
+  padding: 10px;
+}
+
+.divider {
+  border-bottom: 2px solid #fffffc;
+}
+
+span {
+  color: #495057;
 }
 
 .feature-content.media {

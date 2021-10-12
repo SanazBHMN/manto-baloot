@@ -90,7 +90,7 @@ main .announcement {
 
 i.announcement-icon {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   color: #001c63;
 }
 
@@ -274,6 +274,29 @@ button a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
+  }
+
+  .o-6 {
+    order: 6;
+  }
+
+  .o-5 {
+    order: 5;
+  }
+
+  .o-4 {
+    order: 4;
+  }
+
+  .o-3 {
+    order: 3;
+  }
+
+  .o-1 {
+    order: 1;
+  }
+
+  .o-2 {
+    order: 2;
   }
 }

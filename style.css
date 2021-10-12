@@ -42,27 +42,27 @@ body {
   color: #d9d9d9;
 }
 
-main .warning {
-  width: 60%;
+main .announcement {
+  width: 80%;
   margin: 5rem auto;
   padding: 2rem;
   text-align: center;
   border-top: 2px solid #fffffc;
   border-bottom: 2px solid #fffffc;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
-i.warning-icon {
+i.announcement-icon {
   font-size: 2rem;
   margin-left: 8px;
-  animation-name: warning;
+  animation-name: announcement;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
-@keyframes warning {
+@keyframes announcement {
   from {
     color: black;
   }
@@ -116,4 +116,24 @@ p {
 
 .social-media i {
   font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  main .announcement {
+    flex-direction: column;
+    margin: 1.3rem auto;
+    padding: 2rem 0;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  }
 }

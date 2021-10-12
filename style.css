@@ -151,6 +151,62 @@ img.whatsapp {
   font-size: 2em;
 }
 
+/* telephone */
+i.fa-phone {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.telephone {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 5px 20px;
+  background-color: #25d366;
+  color: #fffffc;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.whatsapp-message {
+  color: #fffffc;
+}
+
+i.fa-whatsapp {
+  font-size: 2rem;
+  color: #fffffc;
+  margin-right: 20px;
+}
+
+button a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 /* products section */
 .products {
   width: 90%;
